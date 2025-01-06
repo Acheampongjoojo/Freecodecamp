@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">RollingCafe Survey</h1>
+    <p id="description">Complete the survey by providing the required answers</p>
+    <form method="post" id="survey-form"> 
+      <fieldset>
+        <label for="first-name" id="name-label">Name <input id="name" name="first-name" type="text" placeholder="Enter Your Name" required /></label>
+        <label for="email" id="email-label">Email <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Personality (required)</legend>
+        <label for="staff-option"><input id="staff" type="radio" name="Personality" class="inline" value="personality" checked /> Staff</label>
+        <label for="customer-option"><input id="customer" type="radio" name="Personality" class="inline" value="personality" /> Customer</label>
+      </fieldset>
+      <fieldset>
+        <label for="number" id="number-label">Input your age (years): <input id="number" type="number" name="age" min="13" max="65" placeholder="Enter your age" /></label>
+        <label for="preference">What is your favourite coffee flavour?
+          <select id="dropdown" name="preference">
+            <option value="">(select one)</option>
+            <option value="1">Irish coffee</option>
+            <option value="2">Cappuccino</option>
+            <option value="3">Latte</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="comment">Add your comment:
+          <textarea id="comment" name="comment" rows="4" cols="30" placeholder="comment here..."></textarea>
+        </label>
+      </fieldset>
+        <legend>Which platform do you follow us on?</legend>
+       <label for="social-media">
+        <input class="inline" id="terms-and-conditions" type="checkbox" name="Instagram" value="Instagram" /> Instagram
+      </label>
+        
+       <label for="social-media">
+        <input class="inline" id="terms-and-conditions" type="checkbox" name="terms-and-conditions" value="twitter" /> Twitter
+      </label>
+        
+       <label for="social-media">
+        <input class="inline" id="social-media" type="checkbox" name="social-media" value="facebook" /> Facebook
+      </label>
+        
+      
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
